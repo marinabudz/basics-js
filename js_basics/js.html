@@ -1,0 +1,1310 @@
+<html>
+  <head>
+    <meta charset=" UTF-8" />
+    <style>
+      /* .size {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 50px;
+      }
+      .red {
+        background-color: red;
+      }
+      .yellow {
+        background-color: yellow;
+        color: black;
+      }
+      .main {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        margin-top: 300px;
+      }
+      body {
+        color: black;
+      }
+      .schoolClass {
+        text-align: center;
+      }
+      .vacationImage {
+        width: 200px;
+        height: 300px;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <div class="main">
+      <p class="size red">
+        hey what's up
+      </p>
+      <p class="size yellow">
+        end of script
+      </p>
+      <form name="form1" action="#" style="color: black">
+        Input the Math. marks
+        <input type="text" name="text1" value=" " />
+        <input type="button" value="Marks check" onclick="grade()" />
+      </form>
+      <form name="students" action="#" style="color: black">
+        Input student name:
+        <input type="text" name="studentName" value="" />
+        <input type="button" value="Students Marks" onclick="studentsGrade()" />
+      </form>
+      <form name="grades" action="#" style="color: black">
+        Input Grade type : <input type="text" name="grade" value="A" />
+        <input type="button" value="Check marks" onclick="gradeMarks()" />
+      </form>
+      <form
+        name="w3"
+        onsubmit="w3function(); return false;"
+        style="color: black"
+      >
+        <input
+          type="text"
+          placeholder="Insert number between 2 and 10"
+          id="number"
+          size="30"
+        />
+        <input type="submit" value="Submit" />
+        <p id="result">Your result will be displayed here.</p>
+      </form>
+
+      <form
+        name="oddNumber"
+        onsubmit="calcOddNumber(); return false;"
+        style="color: black"
+        id="formOddNum"
+      >
+        <input type="text" id="anumber" size="30" />
+        <input type="submit" value="see odd numbers" />
+        <p id="numberResults">Odd numbers will be displayed here</p>
+      </form>
+
+      <div class="vacationImage">
+        <img id="vacationImage" src="vacation.jpg" width="100%" />
+      </div>
+      <p>Please choose a country to see info</p>
+
+      <button
+        onclick="document.getElementById('vacationImage').src='bali.jpeg'"
+      >
+        Bali
+      </button>
+      <button
+        onclick="document.getElementById('vacationImage').src='france.jpg'"
+      >
+        France
+      </button>
+      <button
+        onclick="document.getElementById('vacationImage').src='budapest.jpg'"
+      >
+        Budapest
+      </button>
+    </div>
+    <ul>
+      <li id="school"></li>
+    </ul> -->
+    <script>
+      // let name = "ПРИВІТ СТЕПАН";
+      // let admin = name;
+      // let number = 1 / 0;
+      // let weird = `hello ${admin}`;
+      // //   [admin, number, weird].forEach(alert);
+      // let counter = 1;
+      // ++counter;
+
+      // alert(2 * counter);
+      // alert("ананаси" > "яблоко");
+      // let age = prompt("how old are you", "");
+      // alert(`you are ${age} years old`);
+      // let isBoss = confirm("are you the main guy here ?");
+      // if (isBoss) {
+      //   alert("hello my goodness");
+      // } else {
+      //   alert("fuck off");
+      // }
+      // alert(isBoss);
+      // let userName = prompt("What is youe name?");
+      // let contentText = userName
+      //   ? `Привет ${userName}`
+      //   : "Вы не ввели свое имя :(";
+      // alert(contentText);
+      // let userName = "Marina";
+      // let logInName = prompt("What is your name");
+      // let accessAllowed =
+      //   logInName == userName ? "Welcome home babe" : "Fuck off";
+      // alert(accessAllowed);
+
+      // let age = prompt("what's your age ?");
+      // let answer =
+      //   age < 3
+      //     ? "babe"
+      //     : age < 18
+      //     ? "still too small"
+      //     : 100 > age > 18
+      //     ? "here you go"
+      //     : "are you still alive?";
+
+      // alert(answer);
+
+      // let company = prompt(" what year the company was established?");
+      // if (company == 2015) {
+      //   alert("Fucking smart");
+      // } else {
+      //   alert(" why so dump");
+      // }
+
+      // company == 2015 ? alert("geniaus") : alert("dump");
+      // let question = prompt("what si the official name of JS");
+      // question == "EM" ? alert("you are damn right") : alert("estupido");
+
+      // let user = prompt("what is your name ?");
+      // if (user) {
+      //   alert(`Bienvenidos ${user} !!!`);
+      // } else {
+      //   alert("I'm sorry but you forgot to insert name!");
+      // }
+      // user
+      //   ? alert(`hey ${user} what's up`)
+      //   : alert(`sorry u didn't insert name`);
+      // let anumber = prompt("insert random number");
+      // anumber > 0 ? alert(1) : anumber < 0 ? alert(-1) : alert(0);
+      // let result;
+      // result = a + b < 4 ? alert("fine") : alert("wrong");
+
+      // let login = prompt(" Insert yout login name");
+      // message =
+      //   login == "Сотрудник"
+      //     ? alert("Привет")
+      //     : login == "Директор"
+      //     ? alert("Здравствуйте")
+      //     : login == ""
+      //     ? alert("Нет логина")
+      //     : alert("");
+      // alert(1 && 0 && 1);
+      // alert(alert(1) && alert(2));
+      // let age = prompt("age ? ");
+      // if (!(age >= 18 && age <= 90)) {
+      //   alert("hello");
+      // } else {
+      //   alert("nope");
+      // }
+      // let loginName = prompt("your login name ?");
+      // //   let password = prompt("insert your password?");
+      // if (loginName == "Админ") {
+      //   password = prompt("insert your password?");
+      //   if (password == "Я главный") {
+      //     alert("Здравствуйте");
+      //   } else if (password == "" || password == null) {
+      //     alert("Отменено");
+      //   } else {
+      //     alert("Неверный пароль");
+      //   }
+      // } else if (loginName == "" || loginName == null) {
+      //   alert("Отменено");
+      // } else {
+      //   alert("Я вас не знаю");
+      // }
+
+      // let sum = 0;
+      // while (true) {
+      //   let value = +prompt("insert numbers: ");
+      //   if (!value) {
+      //     break;
+      //   }
+      //   sum += value;
+      // }
+      // alert(sum);
+
+      // for (let i = 0; i < 6; i++) {
+      //   if (i % 2 == 0) continue;
+      //   alert(i);
+      // }
+
+      // outer: for (let i = 0; i < 3; i++) {
+      //   for (let j = 0; j < 3; j++) {
+      //     let input = prompt(`please see coordinates: ${i} ${j}`);
+      //     if (!input) break outer;
+      //   }
+      // }
+      // alert("that's it ");
+
+      // for (i = 2; i <= 10; i++) {
+      //   if (i % 2 != 0) continue;
+      //   alert(i);
+      // }
+
+      // for (let i = 0; i < 3; i++) {
+      //   alert(`number ${i}!`);
+      // }
+
+      // let i = 0;
+      // while (i < 3) {
+      //   alert(`number ${i}!`);
+      //   i++;
+      // }
+
+      // while (true) {
+      //   let input = +prompt("Please insert number higher than 100: ");
+      //   if (input <= 100 && input) {
+      //     continue;
+      //   } else {
+      //     break;
+      //   }
+      // }
+
+      // let number;
+      // do {
+      //   number = +prompt("Please insert number higher than 100: ");
+      // } while (number <= 100 && number);
+
+      // let number = 50;
+      // let i = 10;
+      // for (i; i <= number; i++) {
+      //   if (
+      //     i == 2 ||
+      //     i == 3 ||
+      //     i == 5 ||
+      //     i == 7 ||
+      //     (i % 2 != 0 && i % 3 != 0 && i % 5 != 0 && i % 7 != 0)
+      //   ) {
+      //     alert(i);
+      //   }
+      // }
+
+      // let num = 10;
+      // fuckOff: for (let a = 2; a <= num; a++) {
+      //   for (let b = 2; b < a; b++) {
+      //     if (a % b == 0) continue fuckOff;
+      //   }
+      //   alert(a);
+      // }
+
+      // browser = prompt("please insert name of browser?");
+      // if (browser == "Edge") {
+      //   alert("You've got the Edge!");
+      // } else if (!browser) {
+      //   alert("We hope that this page looks ok!");
+      // } else {
+      //   alert("Okay we support these browsers too");
+      // }
+
+      // const number = +prompt("Введите число между 0 и 3", "");
+
+      // switch (number) {
+      //   case 0:
+      //     alert("Вы ввели число 0");
+      //     break;
+      //   case 1:
+      //     alert("Вы ввели число 1");
+      //     break;
+      //   case 2:
+      //   case 3:
+      //     alert("Вы ввели число 2, а может и 3");
+      //     break;
+      // }
+
+      // let userName = "Вася";
+
+      // function showMessage() {
+      //   userName = "Петя"; // объявляем локальную переменную
+
+      //   let message = "Привет, " + userName; // Петя
+      //   alert(message);
+      // }
+      // alert(userName);
+      // // функция создаст и будет использовать свою собственную локальную переменную userName
+      // showMessage();
+
+      // alert(userName);
+
+      // function hello(user, text) {
+      //   return user + ": " + text;
+      // }
+      // alert(hello("marina"));
+
+      // function checkAge(age) {
+      //   if (age >= 18) {
+      //     return true;
+      //   } else {
+      //     return confirm(" have u been allowed");
+      //   }
+      // }
+      // let age = prompt("what is your age ?");
+      // if (checkAge(age)) {
+      //   alert("nice watching");
+      // }
+
+      // fucntion checkAge(age) {
+      //   (age >= 18 ) ? true : confirm (" have u been allowed");
+      // }
+
+      // function checkAgeAgain(age){
+      //   return (age >=18)||confirm (" have u been allowed");
+      // }
+
+      // function checkNumber(a, b) {
+      //   if (a > b) {
+      //     return b;
+      //   }
+      //   return a;
+      // }
+
+      // function calcToPower(x, n) {
+      //   return x ** n;
+      // }
+      // alert(calcToPower(1, 100));
+
+      // function pow(x, n) {
+      //   let result = +x;
+      //   for (let i = 1; i < n; i++) {
+      //     result *= x;
+      //   }
+      //   return result;
+      // }
+      // x = +prompt(" please insert value of x: ");
+      // n = +prompt(
+      //   "please insert buy how many times x till be multiplued by itself:"
+      // );
+
+      // if (n < 1) {
+      //   false;
+      // } else {
+      //   alert(calcToPower(x, n));
+      // }
+
+      // let age = prompt("what's your age ?:", 18);
+      // let hello;
+      // if (age < 18) {
+      //   hello = function() {
+      //     alert("what's up dude");
+      //   };
+      // } else {
+      //   hello = function() {
+      //     alert("Hello");
+      //   };
+      // }
+      // hello();
+
+      // let years = prompt("what's your age ?:", 18);
+      // let welcome =
+      //   years < 18
+      //     ? function() {
+      //         alert("sie ma ");
+      //       }
+      //     : function() {
+      //         alert("heyx");
+      //       };
+      // welcome();
+
+      // function tellFortune(childrenQuantity, partnerName, location, job) {
+      //   let future = `You will be a ${job} in ${location}, and married to ${partnerName} with ${childrenQuantity} kids`;
+      //   return alert(future);
+      // }
+
+      // function calculateDogAge(age) {
+      //   let result = +age * 7;
+      //   return alert(` Your doggie is ${result} years old in dog years!`);
+      // }
+      // function calculateSupply(age, amountPerDay) {
+      //   const maxAge = 80;
+      //   let calcSupply = (maxAge - +age) * (+amountPerDay * 365);
+      //   return alert(
+      //     `You will need ${calcSupply} to last you until the ripe old age of ${maxAge}`
+      //   );
+      // }
+
+      // function calcGeometry(r) {
+      //   let circumference = Math.PI * 2 * r;
+      //   alert(` circumference is ${circumference}`);
+      //   let area = r ** r * Math.PI;
+      //   alert(` area is ${area}`);
+      // }
+      // calcGeometry(4);
+
+      // let tempQuestion = prompt(
+      //   " how would you like to conver fahrenheit to celsius (insert f) or celsius to fahrenheit( insert c): "
+      // );
+
+      // if (tempQuestion == "f") {
+      //   let tempNumber = prompt(" please insert the number :");
+      //   function fahrenheitToCelsius(tempNumber) {
+      //     let Celsius = (5 / 9) * (+tempNumber - 32);
+      //     return alert(
+      //       `${tempNumber} Fahrenheit will be equal to ${Celsius} Celsius`
+      //     );
+      //   }
+      //   fahrenheitToCelsius(tempNumber);
+      // } else if (tempQuestion == "c") {
+      //   tempNumber = prompt(" please insert the number :");
+      //   function celsiusToFahrenheit(tempNumber) {
+      //     let Fahrenheit = +tempNumber * 1.8 + 32;
+      //     return alert(
+      //       `${tempNumber} Celsius will be equal to ${Fahrenheit} Fahrenheit`
+      //     );
+      //   }
+      //   celsiusToFahrenheit(tempNumber);
+      // } else {
+      //   alert(
+      //     "You either provided wrong letter or we don't convert to this temperature"
+      //   );
+      // }
+
+      // let age = prompt("age ?:");
+      // let welcome = age < 18 ? () => alert("whta's up") : () => alert("hello");
+      // // welcome();
+      // let calcSum = (a, b) => {
+      //   let result = a + b;
+      //   return alert(result);
+      // };
+      // // calcSum(10, 23);
+
+      // function ask(question, yes, no) {
+      //   if (confirm(question)) yes();
+      //   else no();
+      // }
+
+      // ask(
+      //   "Вы согласны?",
+      //   () => alert("Вы согласились."),
+      //   () => alert("Вы отменили выполнение.")
+      // );
+
+      // let first_number = 45;
+      // let second_number = 50;
+      // let third_number = 20;
+      // let forth_number = 90;
+
+      // let calcFirst = +first_number / +second_number;
+      // let calcSecond = +third_number - +forth_number;
+
+      // let newParagraph = document.createElement("p");
+      // let newText = document.createTextNode("var1 / var2 = " + calcFirst);
+      // newParagraph.appendChild(newText);
+      // document.body.appendChild(newParagraph);
+
+      // let newParagraph1 = document.createElement("p");
+      // let newText1 = document.createTextNode(" var3 - var4 = " + calcSecond);
+      // newParagraph1.appendChild(newText1);
+      // document.body.appendChild(newParagraph1);
+
+      // let people = {
+      //   name: "petro",
+      //   proffession: "self-employed",
+      //   agePerson: 60
+      // };
+      // // if ("agePerson" in people && "name" in people) {
+      // //   alert(people.name + " is " + people.agePerson + " years old");
+      // // }
+
+      // function students(name, age, faculty) {
+      //   this.name = name;
+      //   this.age = age;
+      //   this.faculty = faculty;
+      // }
+      // let student1 = new students("john", "18", "philosophy");
+      // console.log(student1);
+      // date = new Date();
+      // var newParagraph2 = document.createElement("p");
+      // var newText2 = document.createTextNode("Today date is: " + date);
+      // newParagraph2.appendChild(newText2);
+      // document.body.appendChild(newParagraph2);
+      // console.log(typeof (4 * "7"));
+
+      // function grade() {
+      //   if (document.form1.text1.value >= 90) {
+      //     alert("great result");
+      //   }
+      //   //  else if (
+      //   //   document.form1.text1.value >= 80 &&
+      //   //   document.form1.text1.value < 90
+      //   // ) {
+      //   //   alert("grade is B+");
+      //   // } else if (
+      //   //   document.form1.text1.value >= 70 &&
+      //   //   document.form1.text1.value < 80
+      //   // ) {
+      //   //   alert("grade is B");
+      //   // }
+      //   else {
+      //     alert("grade is C");
+      //   }
+      // }
+
+      //   if (document.vacation.Budapest.value == "Budapest") {
+      //     vacationPhoto.src = "budapest.jpg";
+      //   } else if (document.vacation.France.value == "France") {
+      //     vacationPhoto.src = "france.jpg";
+      //   } else {
+      //     vacationPhoto.src = "bali.jpeg";
+      //   }
+      //   var addImage = document.getElementById("vacationIm");
+      //   addImage.appendChild(vacationPhoto);
+      // }
+
+      // function studentsGrade() {
+      //   if (
+      //     document.students.studentName.value == "Maryna" ||
+      //     document.students.studentName.value == "maryna"
+      //   ) {
+      //     alert("your garde is 1000000000!!!!! You are the best!!!!");
+      //   } else if (
+      //     document.students.studentName.value == "Maxim" ||
+      //     document.students.studentName.value == "maxim"
+      //   ) {
+      //     alert("your grade is 90");
+      //   } else if (
+      //     document.students.studentName.value == "Jacob" ||
+      //     document.students.studentName.value == "jacob"
+      //   ) {
+      //     alert("yopur grade is 30");
+      //   } else {
+      //     alert(
+      //       "Unfortunately yuo are not part of this group. Please double check"
+      //     );
+      //   }
+      // }
+
+      // function gradeMarks() {
+      //   let grade = document.grades.grade.value;
+      //   switch (grade) {
+      //     case "A+":
+      //     case "a+":
+      //       console.log("score >=90");
+      //       break;
+      //     case "A":
+      //     case "a":
+      //       console.log("score between 80 and 90");
+      //       break;
+      //     case "B+":
+      //     case "b+":
+      //       console.log("score between 70 and 80");
+      //       break;
+      //     case "B":
+      //     case "b":
+      //       console.log("score between 60 and 70");
+      //       break;
+      //     case "C":
+      //     case "c":
+      //       console.log("score under 60");
+      //       break;
+      //     default:
+      //       console.log("wrong grade");
+      //   }
+      // }
+      // function w3function() {
+      //   let x = document.getElementById("number").value;
+      //   if (x < 2 || x > 10) {
+      //     document.getElementById("result").innerHTML =
+      //       "The number is not within the range.";
+      //   } else {
+      //     let z = 0;
+      //     let y;
+      //     for (y = 1; y < x; y++) {
+      //       z += y;
+      //       if (y === x) {
+      //         break;
+      //       }
+      //     }
+      //     document.getElementById("result").innerHTML =
+      //       "The sum of numbers between  1 to  " + x + " is: " + z;
+      //   }
+      // }
+      // newParagraph3 = document.createElement("p");
+      // newText3 = document.createTextNode(
+      //   "List of odd numbers between 1 to 10 is"
+      // );
+      // newParagraph3.appendChild(newText3);
+      // document.body.appendChild(newParagraph3);
+      // let y = 0;
+      // for (y = 1; y <= 10; y++) {
+      //   if (y % 2 == 0) {
+      //     continue;
+      //   }
+      //   newParagraph4 = document.createElement("ul");
+      //   newText4 = document.createTextNode(y);
+      //   newParagraph4.appendChild(newText4);
+      //   document.body.appendChild(newParagraph4);
+      // }
+
+      // function calcOddNumber() {
+      //   let x = document.getElementById("anumber").value;
+      //   if (x < 0 || x > 0) {
+      //     let y;
+      //     let z = [];
+      //     for (y = 1; y <= x; y++) {
+      //       if (y % 2 !== 0) {
+      //         z.push(y);
+      //       }
+      //       document.getElementById("numberResults").innerHTML =
+      //         "List of odd numbers is " + z;
+      //     }
+      //   } else {
+      //     document.getElementById("numberResults").innerHTML =
+      //       "No range possible";
+      //   }
+      // }
+
+      // function listS() {
+      //   let x;
+
+      //   let allStudents = [
+      //     { name: "andrij", grade: "a" },
+      //     { name: "mila", grade: "d" },
+      //     { name: "marina", grade: "a+" },
+      //     { name: "vitalii", grade: "b" },
+      //     { name: "sara", grade: "c" },
+      //     { name: "ksu", grade: "d" }
+      //   ];
+      //   for (x = 0; x < allStudents.length; x++) {
+      //     student =
+      //       "Student: " +
+      //       allStudents[x].name +
+      //       " received " +
+      //       allStudents[x].grade;
+
+      //     newParagraph6 = document.createElement("div");
+      //     newText6 = document.createTextNode(student);
+      //     newParagraph6.appendChild(newText6);
+      //     document.body.appendChild(newParagraph6);
+      //   }
+      // }
+      // listS();
+
+      // // newParagraph6 = document.createElement("p");
+      // // allStudents.forEach(student =>
+      // //   newParagraph6.append(
+      // //     student.name + " has " + student.grade + " grade! " + "<br>"
+      // //   )
+      // // );
+
+      // // newParagraph7 = document.createElement("div");
+      // // newParagraph7.appendChild(newParagraph6);
+      // // document.body.appendChild(newParagraph6);
+
+      // function studentList() {
+      //   let key,
+      //     str = "";
+      //   let oneStudent = { name: "andrij", grade: "a" };
+
+      //   for (key in oneStudent) {
+      //     str += oneStudent[key];
+      //   }
+      //   return str;
+      // }
+      // newParagraph5 = document.createElement("div");
+      // newText5 = document.createTextNode(studentList());
+      // newParagraph5.appendChild(newText5);
+      // document.body.appendChild(newParagraph5);
+
+      // let employess = prompt(
+      //   "insert number of employees u have between 3 and 8: "
+      // );
+      // if (employess == +employess) {
+      //   if (employess > 8) {
+      //     alert("too hight number");
+      //   } else if (employess < 3) {
+      //     alert("too low number ");
+      //   } else {
+      //     alert("great job");
+      //   }
+      // } else if (!employess) {
+      //   alert("sorry u didnt isert a value ");
+      // } else {
+      //   alert("sorry it should be numerical value ");
+      // }
+      // function schoolDetails() {
+      //   console.log(
+      //     "The name of the school is " +
+      //       this.name +
+      //       "size is " +
+      //       this.size +
+      //       "students number is " +
+      //       this.students +
+      //       "classification is " +
+      //       this.classification +
+      //       "and rate is " +
+      //       this.rate
+      //   );
+      // }
+      // function school(name, size, students, classification, rate) {
+      //   this.name = name;
+      //   this.size = size;
+      //   this.students = students;
+      //   this.classification = classification;
+      //   this.rate = rate;
+      //   // this.schoolDetails = schoolDetails();
+      // }
+
+      // school1 = new school("1", "500m", 400, "medical", "4+");
+      // school2 = new school("2", "600m", 600, "georaphy", "5+");
+      // school3 = new school("3", "400m", 500, "sport", "5");
+      // school4 = new school("4", "700m", 800, "math", "5+");
+      // school5 = new school("5", "300m", 250, "sociology", "3+");
+
+      // let allSchools = [];
+      // allSchools.push(school1, school2, school3, school4, school5);
+
+      // function allSchool() {
+      //   for (x = 0; x < allSchools.length; x++) {
+      //     eachSchool =
+      //       "name: " +
+      //       allSchools[x].name +
+      //       ", " +
+      //       "size: " +
+      //       allSchools[x].size +
+      //       ", " +
+      //       "students: " +
+      //       allSchools[x].students +
+      //       ", " +
+      //       "classification: " +
+      //       allSchools[x].classification +
+      //       ", " +
+      //       "rate: " +
+      //       allSchools[x].rate +
+      //       ", ";
+      //     let newParagraph7 = document.createElement("div");
+      //     newParagraph7.className = "schoolClass";
+      //     newText7 = document.createTextNode(eachSchool);
+      //     newParagraph7.appendChild(newText7);
+      //     document.body.appendChild(newParagraph7);
+      //   }
+      // }
+      // allSchool();
+
+      // function student() {
+      //   this.name = "Robert";
+      // }
+
+      // student.prototype.display = function() {
+      //   console.log("My name is  " + this.name);
+      // };
+
+      // var stu1 = new student();
+      // stu1.display();
+
+      // let newMatch = /dog/;
+      // let sentance = newMatch.exec(
+      //   "my favorite dog is Pitbull and I do not have a dog"
+      // );
+      // console.log(
+      //   "here is a string where the match was found: " + sentance.input
+      // );
+
+      // let mymatch = "oliver";
+      // let str1 = " oliver we went out and later that night oliver joined us";
+      // let myArray = str1.match(mymatch);
+      // console.log(myArray.index);
+
+      // // let search = /providing/;
+      // // let searchResult = search.exec(
+      // //   "The UBC Master of Data Science curriculum covers all stages of this chain, providing you with skills to focus on the “knowledge” section. Over 10 months, you will learn how to extract data for use in experiments, how to apply state-of-the-art techniques in data analysis and how to present extracted knowledge effectively to domain experts.Data science can open your mind—and career path—to infinite possibilities. There is a growing need in many fields for people who can apply computational and statistical techniques to data and then effectively communicate results from analyses to various stakeholders.The new UBC Master of Data Science is a professional program developed by the combined expertise of the UBC departments of Computer Science and Statistics to help meet this need and give students a fast track to a great career.Utilizing descriptive and prescriptive techniques, students extract and analyze data from both unstructured and structured forms and then communicate the findings of those analyses in ways to enable organizations to make informed decisions based on data."
+      // // );
+      // // console.log(
+      // //   "here are the sentances with word study " + searchResult.input
+      // // );
+
+      // function min_value() {
+      //   let ctr,
+      //     min_number = this[0];
+      //   for (ctr = 1; ctr < this.length; ctr++) {
+      //     if (min_number < this[ctr]) {
+      //       min_number = this[ctr];
+      //     }
+      //   }
+      //   return min_number;
+      // }
+      // Array.prototype.min = min_value;
+      // var a = new Array(111, 123, 126.99, 100, 500);
+      // var b = a.min();
+      // console.log(b);
+
+      // let fruitsArray = [
+      //   "apple",
+      //   "orange",
+      //   "strawberry",
+      //   "lemon",
+      //   "kiwi",
+      //   "banana"
+      // ];
+
+      // let vegetablesArray = [
+      //   "tomato",
+      //   "potato",
+      //   "lettuce",
+      //   "cabbage",
+      //   "broccoli",
+      //   "corn"
+      // ];
+
+      // let dessertsArray = [
+      //   "cake",
+      //   "pudding",
+      //   "jelly",
+      //   "napoleon",
+      //   "miedovyk",
+      //   "tiramisu"
+      // ];
+
+      // console.log(fruitsArray);
+      // fruitsArray.length = 5;
+      // console.log(fruitsArray);
+      // fruitsArray.length = 6;
+      // console.log(fruitsArray);
+      // fruitsArray.unshift("coco");
+      // fruitsArray.push("banana");
+      // console.log(fruitsArray);
+
+      // console.log(fruitsArray.join());
+      // console.log(vegetablesArray.join(". "));
+      // console.log(dessertsArray.join("! "));
+      // console.log(fruitsArray.pop());
+      // console.log(fruitsArray);
+      // fruitsArray.push("banana");
+      // console.log(fruitsArray);
+      // console.log(vegetablesArray);
+      // vegetablesArray.reverse();
+      // console.log(vegetablesArray);
+      // let neweVegetableArray = vegetablesArray.slice(0, 5);
+      // console.log(vegetablesArray);
+      // console.log(neweVegetableArray);
+
+      // console.log(dessertsArray);
+      // dessertsArray.splice(0, 3, "cookies", "cheasecake", "vanilla cake");
+      // console.log(dessertsArray);
+      // dessertsArray.sort();
+      // console.log(dessertsArray);
+
+      // console.log(fruitsArray.toString("! "));
+      // console.log(fruitsArray.join(" !"));
+      // console.log(fruitsArray.valueOf());
+
+      // function Ascending(x, y) {
+      //   return x - y;
+      // }
+      // function Descending(x, y) {
+      //   return y - x;
+      // }
+
+      // let numberArray = [6, 2434, 234, 567, 43, 6778, 35, 0];
+      // let stringArray = ["5", "heloo", "4", "dggg", "21", "wow"];
+      // let mixedArray = [54, "hello", "454", 4, "dibil", 5455, "eeeeeee", "555"];
+
+      // console.log(numberArray);
+      // numberArray.sort();
+      // console.log(numberArray);
+      // numberArray.sort(Ascending);
+      // console.log(numberArray);
+      // numberArray.sort(Descending);
+      // console.log(numberArray);
+
+      // console.log(stringArray);
+      // stringArray.sort();
+      // console.log(stringArray);
+      // stringArray.sort(Ascending);
+      // console.log(stringArray);
+      // stringArray.sort(Descending);
+      // console.log(stringArray);
+
+      // console.log(mixedArray);
+      // mixedArray.sort();
+      // console.log(mixedArray);
+      // mixedArray.sort(Ascending);
+      // console.log(mixedArray);
+      // mixedArray.sort(Descending);
+      // console.log(mixedArray);
+      // let grocery = fruitsArray.concat(vegetablesArray, dessertsArray);
+      // console.log(grocery);
+      // function factorial(n) {
+      //   return n <= 0 ? 1 : factorial(n - 1) * n;
+      // }
+      // console.log(factorial(4));
+      // console.log(factorial.length);
+
+      // function name(first_name, second_name) {
+      //   this.first_name = first_name;
+      //   this.second_name = second_name;
+      // }
+      // function full_name() {
+      //   let final_name = this.first_name + " " + this.second_name;
+      //   return final_name;
+      // }
+      // name.prototype.fullName = full_name;
+
+      // let e = new name("marina", "budz");
+      // let d = e.fullName();
+
+      // console.log(d);
+
+      // function money(first_name, last_name, balance, owed, get) {
+      //   this.first_name = first_name;
+      //   this.last_name = last_name;
+      //   this.balance = balance;
+      //   this.owed = owed;
+      //   this.get = get;
+      // }
+
+      // function clientMoney() {
+      //   let cleint_money =
+      //     this.first_name +
+      //     " " +
+      //     this.last_name +
+      //     " owed: " +
+      //     this.owed +
+      //     ", get:" +
+      //     this.get +
+      //     " and the final balance: " +
+      //     this.balance;
+      //   return cleint_money;
+      // }
+      // money.prototype.clientInfo = clientMoney;
+
+      // let new_client = new money("petro", "zav", 300, 320, 20);
+
+      // let client_info = new_client.clientInfo();
+
+      // function Ascending(x, y) {
+      //   return x - y;
+      // }
+      // function maxNum(alist, n) {
+      //   let correctOrder = alist.sort(Ascending);
+      //   return correctOrder[correctOrder.length - 1];
+      // }
+      // let numberList = [10, 434, 54363, 1234, 13, 1, 332, 4243];
+
+      // console.log(maxNum(numberList));
+
+      // let o = { x: 100 };
+      // o.watch("x", function(id, oldValue, newValue) {
+      //   console.log(id + "changed from " + oldValue + "to a " + newValue);
+      //   return newValue;
+      // });
+
+      // var o = { p: 1 };
+
+      // o.watch("p", function(id, oldval, newval) {
+      //   console.log("o." + id + " changed from " + oldval + " to " + newval);
+      //   return newval;
+      // });
+
+      // // objects
+
+      // let user = {};
+      // user["likes eating"] = true;
+
+      // let banana = "loves bananas";
+      // user[banana] = true;
+      // user.age = 40;
+      // user.name = "petro";
+
+      // // let userName = prompt("what do u wanna know about user", "name");
+
+      // console.log(user["likes eating"]);
+      // console.log(user);
+      // // console.log(user[userName]);
+
+      // // let fruit = prompt("which fruit to buy?");
+      // // let bag = {
+      // //   [fruit]: 5
+      // // };
+
+      // // let bananas = prompt("how many bananas to buy:");
+      // // let apples = prompt("how many apples to buy:");
+      // // let oranges = prompt("how many oranges to buy:");
+      // // let bag = {
+      // //   bananas: [bananas],
+      // //   apples: [apples],
+      // //   oranges: [oranges]
+      // // };
+
+      // // console.log(bag);
+      // function creatUser(name, age, sex, country) {
+      //   return {
+      //     name,
+      //     age,
+      //     sex,
+      //     country
+      //   };
+      // }
+
+      // let userSam = creatUser("sam", 40, "male");
+      // let userKate = creatUser("kate", 20, "female", "Ghana");
+      // // console.log(userKate, userSam);
+      // // let students = [userKate, userSam];
+      // // console.log(userKate.sublings === undefined);
+      // // console.log("food" in userSam);
+
+      // // //перевіряжмо чи є така змінна
+      // // console.log("country" in userSam);
+      // // // перевіряємо чи та змінна має значення
+      // // console.log(userSam.country);
+
+      // // for in
+
+      // for (let key in userSam) {
+      //   // ключи
+      //   console.log(key);
+      //   // значения ключей
+      //   console.log(userSam[key]);
+      // }
+
+      // // воно все змінить починаючи з меншої цифри
+      // let telephoneNumbers = {
+      //   49: "germany",
+      //   48: "china",
+      //   47: "UK",
+      //   1: "USA"
+      // };
+      // for (let number in telephoneNumbers) {
+      //   console.log(`${number} : ${telephoneNumbers[number]} `);
+      // }
+
+      // // добавивши + ми зберегли порядок який був вказаний в списку
+      // let telephoneNumbersAccurate = {
+      //   "+49": "germany",
+      //   "+48": "china",
+      //   "+47": "UK",
+      //   "+1": "USA"
+      // };
+      // for (let number in telephoneNumbersAccurate) {
+      //   console.log(`${+number} : ${telephoneNumbersAccurate[number]} `);
+      // }
+
+      // let text = "hello";
+      // let message = text;
+      // console.log(message);
+      // console.log(text);
+      // text = "HELLO";
+      // console.log(message);
+      // console.log(text);
+
+      // let userObj = {
+      //   name: "petro"
+      // };
+      // let differentUserObj = userObj;
+      // console.log(userObj.name);
+      // console.log(differentUserObj.name);
+
+      // differentUserObj.name = "JOSH";
+      // console.log(userObj.name);
+      // console.log(differentUserObj.name);
+
+      // // щоб мати два обєкта з однаковими ключами але різними значеннями
+      // //можна зробити функцію з такими ж ключами або ж зробити клона
+      // // але в жодному випадку не переприсвоювати бо змінна в одному обєкті зробить
+      // //таку ж саму змінну в іншому обжкті
+
+      // //клони
+      // // 1 method
+      // let userToClone = {
+      //   name: "steve",
+      //   age: 50
+      // };
+      // let userClone = {};
+      // for (let key in userToClone) {
+      //   userClone[key] = userToClone[key];
+      //   console.log(`${key} : ${userToClone[key]} `);
+      //   console.log(`${key} : ${userClone[key]} `);
+      // }
+      // userClone.name = "petro";
+      // userClone.age = 10;
+
+      // console.log(userToClone);
+      // console.log(userClone);
+      // // 2 method
+      // let anotherClone = Object.assign({}, userToClone);
+      // (anotherClone.name = "Stepan"), (anotherClone.age = 39);
+      // console.log(userToClone);
+      // console.log(userClone);
+      // console.log(anotherClone);
+
+      // // пробелма з клонуванням виходять якщо в обєкті є ще один обєкт
+      // let animal = {
+      //   name: undefined,
+      //   characteristics: {
+      //     height: undefined,
+      //     weight: undefined,
+      //     color: undefined
+      //   }
+      // };
+      // let elephant = Object.assign({}, animal);
+      // elephant.characteristics.color = "grey";
+      // console.log(elephant.characteristics.color);
+      // console.log(animal.characteristics.color);
+      // // погано тому що колір animal також змінився
+
+      // // присвоєння нових ключів з значенням можна 3 методами
+
+      // let sportStudents = { "total-students-number": 100 };
+      // //1 method
+      // sportStudents.basketball = 10;
+      // //2 method
+      // sportStudents["average-satisfaction"] = "70%";
+      // //3 method
+      // let volleyball = { volleyball: 20 };
+      // let football = { football: 30 };
+      // let unsatisfaction = { "average-disatisfaction": "30%" };
+      // Object.assign(sportStudents, volleyball, football, unsatisfaction);
+      // // 4 method
+      // Object.assign(sportStudents, { chess: 10, dance: 20, hokey: 10 });
+      // console.log(sportStudents);
+
+      // for (let key in sportStudents) {
+      //   console.log(`${key} : ${sportStudents[key]} `);
+      // }
+      // const ordedSportStudents = {};
+      // Object.keys(sportStudents)
+      //   .sort()
+      //   .forEach(function(key) {
+      //     ordedSportStudents[key] = sportStudents[key];
+      //     console.log(`${key} : ${ordedSportStudents[key]} `);
+      //   });
+
+      // // exercises
+      // // 1
+      // let User = {};
+      // User.name = "John";
+      // User.surname = "Smith";
+      // User.name = "Pete";
+      // delete User.name;
+      // console.log(User);
+
+      // //2
+      // function isEmpty(object) {
+      //   for (let key in object) {
+      //     return false;
+      //   }
+      //   return true;
+      // }
+      // let schedule = {};
+      // console.log(isEmpty(schedule));
+      // schedule["8:30"] = "get up";
+      // console.log(isEmpty(schedule));
+
+      // // 4
+      // let salaries = {
+      //   John: 100,
+      //   Ann: 160,
+      //   Pete: 130
+      // };
+      // let eachSalary;
+      // let sum = 0;
+      // for (let key in salaries) {
+      //   sum += salaries[key];
+      // }
+      // console.log(sum);
+
+      // // 5
+      // let multiplyNumeric = obj => {
+      //   for (let key in obj) {
+      //     if (obj[key] === +obj[key]) {
+      //       obj[key] *= 2;
+      //     }
+      //   }
+      //   return obj;
+      // };
+
+      // let multiplyNumeric2 = obj => {
+      //   for (let key in obj) {
+      //     if (typeof obj[key] === "number") {
+      //       obj[key] *= 2;
+      //     }
+      //   }
+      //   return obj;
+      // };
+      // function multiplyNumeric3(obj) {
+      //   for (let key in obj) {
+      //     obj[key] = +obj[key] ? +obj[key] * 2 : obj[key];
+      //   }
+      //   return obj;
+      // }
+      // let menu = {
+      //   width: 200,
+      //   height: 300,
+      //   title: "My menu"
+      // };
+      // console.log(menu);
+      // // console.log(multiplyNumeric(menu));
+      // console.log(multiplyNumeric3(menu));
+
+      // SYMBOL
+
+      // let id = Symbol("name");
+      // alert(id.toString());
+      // alert(id.description);
+
+      // let user = {
+      //   name: "petro"
+      // };
+      // let id = Symbol("id");
+      // user[id] = 1;
+
+      // user.id = "mine";
+      // user.id = "yours";
+      // console.log(user);
+      // console.log(Object.keys(user));
+      // console.log(Object.values(user));
+      // let clone = Object.assign({}, user);
+      // console.log(clone);
+      // clone[id] = 0;
+      // console.log(clone);
+
+      // let userId = Symbol.for("userId");
+      // let anotherUserId = Symbol.for("userId");
+      // console.log(userId === anotherUserId);
+      // alert(userId.toString());
+      // alert(userId.description);
+      // alert(Symbol.keyFor(userId));
+
+      // THIS
+      let user = {
+        name: "stas",
+        age: 30
+      };
+
+      user.sayHi = () => {
+        console.log(`hello ${user.name}`);
+      };
+      //використання значень обєкту чере метод в ньому:
+      //або this
+      // або user.name(ненадійна у випадку клонування чи наслідування буде помилка)
+      user = {
+        name: "petro",
+        age: 30,
+        sayBye() {
+          let bye = () => console.log("Bye " + this.name);
+          bye();
+        },
+        sayHi() {
+          console.log(`hello ${user.name}`);
+        }
+      };
+      // // broka
+      // user.sayHi();
+      // (user.name == "petro" ? user.sayBye : user.sayHi)();
+
+      let calculator = {
+        read() {
+          this.number1 = +prompt("number 1:");
+          this.number2 = +prompt("number 2");
+        },
+        sum() {
+          let sum = this.number1 + this.number2;
+          return sum;
+        },
+        mul() {
+          let multiplication = this.number1 * this.number2;
+          return multiplication;
+        }
+      };
+      calculator.read();
+      console.log(calculator.sum());
+      console.log(calculator.mul());
+    </script>
+  </body>
+</html>

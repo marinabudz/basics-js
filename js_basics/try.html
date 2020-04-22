@@ -1,0 +1,187 @@
+<html>
+  <head>
+    <meta charset=" UTF-8" />
+    <!-- добавим стили mocha для отображения результатов -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css"
+    />
+    <!-- добавляем сам фреймворк mocha -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+      // включаем режим тестирования в стиле BDD
+      mocha.setup("bdd");
+    </script>
+    <!-- добавим chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+      // chai предоставляет большое количество функций. Объявим assert глобально
+      let assert = chai.assert;
+    </script>
+  </head>
+  <body>
+    <script>
+      // // 1
+      // let userAge = +prompt(" How old are you:");
+      // alert(`I'm ${userAge} years old`);
+
+      // // 2
+      // const userYear = +prompt(" What is the year you were born:");
+      // let currentYear = 2020;
+      // let newUserAge = currentYear - userYear;
+      // alert(` You are ${newUserAge} years old);
+
+      // // 3
+      // let rectangularSideFirst = +prompt(
+      //   "Insert the length of first rectangular side"
+      // );
+      // let rectangularSideSecond = +prompt(
+      //   "Insert the length of second rectangular side"
+      // );
+      // let rectangularPerimeter =
+      //   2 * rectangularSideFirst + 2 * rectangularSideSecond;
+      // alert(`rectangular perimetr is ${rectangularPerimeter} `);
+
+      // // 4
+      // let radius = +prompt("please insert the radius of circle: ");
+      // let circleArea = Math.PI * radius ** 2;
+      // alert(`circle area is ${circleArea} `);
+
+      // // 5
+      // let userTimeLeft = +prompt(
+      //   "please insert how long more should you drive (in hours) : "
+      // );
+      // const kilometersPerHour = 50;
+      // let timeToDestination = userTimeLeft * kilometersPerHour;
+      // alert(` you need to drive at least ${timeToDestination} kilometers`);
+
+      // 6
+      // function kmToMiles() {
+      //   let unit = prompt(
+      //     "please insert k to check km to miles and m to check miles to km: "
+      //   );
+
+      //   if (unit == "k") {
+      //     let number = +prompt("please insert number ");
+      //     let kilometers = number / 1.609;
+      //     alert(kilometers);
+      //   } else if (unit == "m") {
+      //     let number = +prompt("please insert number ");
+      //     let miles = number * 1.609;
+      //     alert(miles);
+      //   } else {
+      //     alert("sorry there is no such value ");
+      //   }
+      // }
+      // kmToMiles();
+
+      // // 7
+      // let petrolPrice = 29.5;
+      // let userMoney = +prompt("please insert the amount on your balance: ");
+      // let petrolNeeded = +prompt("please insert how much petrol do you need: ");
+      // let petrolBuy = petrolNeeded * petrolPrice;
+      // let moneyLeft = userMoney - petrolBuy;
+      // if (moneyLeft < 0) {
+      //   alert("sorry you can't afford to buy petrol");
+      // } else {
+      //   alert(
+      //     `the price for petrol will be ${petrolBuy} and the left balance would be ${moneyLeft} .`
+      //   );
+      // }
+      // let string1 = "hello";
+      // let string2 = " HELLO";
+      // let String1 = string1.toLowerCase();
+      // let String2 = string2.toLowerCase();
+      // if (String2 == String1) {
+      //   alert("congrats they match");
+      // } else {
+      //   ("nope");
+      // }
+
+      // // 2
+      // let veggies = "морква, картопля, буряк";
+      // let veggiesList = veggies.split(",");
+      // console.log(veggiesList);
+
+      // // 3
+      // let min = 1;
+      // let max = 6;
+      // let game = confirm("confirm to play");
+
+      // if (game) {
+      //   let randomNumber1 = Math.floor(Math.random() * (max - min + 1)) + min;
+      //   let randomNumber2 = Math.floor(Math.random() * (max - min + 1)) + min;
+      //   alert(randomNumber1, randomNumber2);
+      //   if (randomNumber1 == 6 && randomNumber2 == 6) {
+      //     alert("це джекпот");
+      //   }
+      // } else {
+      //   alert("maybe next time");
+      // }
+
+      // // 4
+      // let firstNumber = +prompt("Insert random number");
+      // let secondNumber = +prompt("Insert second number");
+      // if (firstNumber > secondNumber) {
+      //   let checkRandomNumber =
+      //     Math.floor(Math.random() * (firstNumber - secondNumber + 1)) +
+      //     secondNumber;
+      //   alert(checkRandomNumber);
+      // } else if (secondNumber > firstNumber) {
+      //   let checkRandomNumber =
+      //     Math.floor(Math.random() * (secondNumber - firstNumber + 1)) +
+      //     firstNumber;
+      //   alert(checkRandomNumber);
+      // } else {
+      //   alert("sorry");
+      // }
+
+      // // 5
+
+      // // first choice
+      // let users = [
+      //   {
+      //     age: 40,
+      //     name: "Carlos",
+      //     hobby: "baseball"
+      //   },
+      //   {
+      //     age: 33,
+      //     name: "Steve",
+      //     hobby: "football"
+      //   },
+      //   {
+      //     age: 54,
+      //     name: "Nataly",
+      //     hobby: "dancing"
+      //   }
+      // ];
+      // // second choice
+      // let allUsers = [
+      //   { ["age"]: [40], ["name"]: ["Carlos"], ["hobby"]: ["baseball"] },
+      //   { ["age"]: [33], ["name"]: ["Steve"], ["hobby"]: ["football"] },
+      //   { ["age"]: [54], ["name"]: ["Nataly"], ["hobby"]: ["dancing"] }
+      // ];
+
+      // function pow(x, n) {
+      //   let result = 1;
+      //   for (let i = 0; i < n; i++) {
+      //     result *= x;
+      //   }
+      //   return result;
+      // }
+      describe("pow", function() {
+        it("повертає в стапінь", function() {
+          assert.equal(pow(2, 3), 8);
+        });
+      });
+    </script>
+    <script src="js.js"></script>
+    <div id="mocha"></div>
+
+    <!-- запускаем тесты! -->
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
